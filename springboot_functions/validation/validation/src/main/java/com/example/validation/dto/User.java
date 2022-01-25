@@ -22,8 +22,6 @@ public class User {
     @Pattern(regexp = "^\\d{2,3}-\\d{3,4}-\\d{4}$", message = "양식과 일치하지 않습니다. 01x-xxxx-xxxx")
     private String phoneNumber;
 
-    //custom validation
-    @YearMonth(pattern = "yyyyMM")
     private String reqYearMonth;    //yyyyMM
 
     //validation 지정하고 싶은 멤버변수에 Valid annotation 붙여주어야함.

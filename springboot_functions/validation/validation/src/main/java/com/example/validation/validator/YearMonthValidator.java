@@ -28,6 +28,6 @@ public class YearMonthValidator implements ConstraintValidator<YearMonth, String
         } catch (Exception e){
             return false;
         }
-        return false;
+        return true;
     }
 }
